@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nikhil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav .image-profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #9c97f1;
+            object-fit: cover;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            max-width: 85vw;
+            margin: 80px auto;
+            text-align: center;
+        }
+
+        .projects-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .projects-section p {
+            color: #d1d1d1;
+            margin-bottom: 50px;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #1e2167;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(170, 107, 228, 0.4);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: #cfcfcf;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-tech {
+            font-size: 0.85rem;
+            color: #9c97f1;
+            margin-bottom: 15px;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 6px 12px;
+            border: 1px solid #9c97f1;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 0.85rem;
+        }
+
+        .project-links a:hover {
+            background-color: #9c97f1;
+            color: black;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            margin-top: 80px;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">
+                <img class="image-profile" src="Nikhil Profile.jpg" alt="">
+                <div>Nikhil's Portfolio</div>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h1>My <span class="purple">Projects</span></h1>
+            <p>Some of the work I have built</p>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <h3>MedDoc Pro</h3>
+                    <p>
+                        A healthcare web application where users can fill a consultation
+                        form, choose doctors, and book appointment slots.
+                    </p>
+                    <div class="project-tech">Tech: Java, Spring Boot, MySQL, HTML, CSS</div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="https://github.com/inikhil25">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>NoteTaker</h3>
+                    <p>
+                        A simple note-taking web app allowing users to create,
+                        edit, and manage personal notes efficiently.
+                    </p>
+                    <div class="project-tech">Tech: HTML, CSS, JavaScript</div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="https://github.com/inikhil25">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Developer Portfolio</h3>
+                    <p>
+                        A personal responsive portfolio website showcasing skills,
+                        services, and projects with modern UI design.
+                    </p>
+                    <div class="project-tech">Tech: HTML, CSS, JavaScript</div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="https://github.com/inikhil25">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A basic CRUD-based application for managing student
+                        records and academic information.
+                    </p>
+                    <div class="project-tech">Tech: Java, MySQL</div>
+                    <div class="project-links">
+                        <a href="#">Details</a>
+                        <a href="https://github.com/inikhil25">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-rights">
+            © 2026 nikhilsportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav .image-profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #9c97f1;
+            object-fit: cover;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+
+        }
+
+        .nav-title {
+            font-weight: 600;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.3rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            /* removes link underline */
+            margin-right: 10px;
+        }
+
+        .leftSection .btn:hover {
+            background: #2a2f8f;
+        }
+
+        .rightSection img {
+            width: 100%;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.8rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            background-color: white;
+            height: 93px;
+            width: 1px;
+            margin: 0 93px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .footer-social a img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .footer-social a img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(170, 107, 228, 0.6);
+        }
+
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #9c97f1;
+        }
+
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img class="image-profile" src="Nikhil Profile.jpg" alt="">
+                <div class="nav-title">Nikhil's Portfolio</div>
+            </div>
+
+
+            <div class="right">
+                <ul>
+                    <!-- # = placeholder link ( which means is the page link) -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Nikhil</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/18tDSlGEE_owN6bGWajJ68Mzg1lbEygyJ/view?usp=drive_link"
+                        class="btn">Download Resume</a>
+                    <a href="https://github.com/inikhil25" class="btn">Visit Github</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I've Done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Master Of Comuter Applications - MCA(2023-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Write here about your work experience -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Bachlore of Arts - BA(2019-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Write here about your work experience -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        <!-- past experiences -->
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Write here about your work experience -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        <!-- past experiences -->
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Write here about your work experience -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        <!-- past experiences -->
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Write here about your work experience -->
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        <!-- past experiences -->
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Write here about your work experience -->
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Nikhil's Developer Portfolio</h3>
+            </div>
+            <div class="footer-first">
+                <h4>Connect with me</h4>
+
+                <div class="footer-social">
+                    <a href="linkedin.com/in/nikhil-pal-37a33a242" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="https://www.facebook.com/nikhil.pal.562114" target="_blank">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="https://www.instagram.com/hanjii_nikhil/" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; nikhilsportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Full Stack Developer', 'QA Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

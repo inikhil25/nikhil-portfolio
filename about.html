@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nikhil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav .image-profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #9c97f1;
+            object-fit: cover;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+        }
+
+        .about-section {
+            max-width: 80vw;
+            margin: 80px auto;
+        }
+
+        .about-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #d1d1d1;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills h2 {
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            list-style: none;
+            background: #1e2167;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin: 8px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            margin-top: 80px;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">
+                <img class="image-profile" src="Nikhil Profile.jpg" alt="">
+                <div>Nikhil's Portfolio</div>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About <span class="purple">Me</span></h1>
+
+            <p>
+                Hello! I'm <span class="purple">Nikhil Pal</span>, a passionate and dedicated
+                Software Developer currently pursuing my Master of Computer Applications (MCA).
+                I enjoy building clean, responsive, and user-friendly web applications.
+            </p>
+
+            <p>
+                I have a strong interest in Full Stack Development and love working with modern
+                technologies to solve real-world problems. I am a quick learner, self-motivated,
+                and always eager to improve my technical and problem-solving skills.
+            </p>
+
+            <p>
+                My goal is to start my career as a software developer in a growth-oriented company
+                where I can apply my knowledge, learn from experienced professionals, and contribute
+                to meaningful projects.
+            </p>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL</li>
+                    <li>Git & GitHub</li>
+                    <li>Basic QA Testing</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-rights">
+            © 2026 nikhilsportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
