@@ -28,10 +28,9 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            min-height: 80px;
             background-color: rgb(18, 18, 62);
             flex-wrap: wrap;
-            padding: 10px 0;
+            padding: 12px 0;
         }
 
         nav .image-profile {
@@ -69,11 +68,7 @@
             font-size: 1.5rem;
         }
 
-        .nav-title {
-            font-weight: 600;
-        }
-
-        /* ================= HERO SECTION ================= */
+        /* ================= HERO ================= */
         .firstSection {
             display: flex;
             justify-content: space-around;
@@ -95,7 +90,7 @@
             padding: 30px 0;
         }
 
-        .leftSection .btn {
+        .btn {
             display: inline-block;
             padding: 10px 18px;
             background: #1e2167;
@@ -108,7 +103,7 @@
             margin: 8px;
         }
 
-        .leftSection .btn:hover {
+        .btn:hover {
             background: #2a2f8f;
         }
 
@@ -132,60 +127,51 @@
             border: none;
         }
 
-        /* ================= QUALIFICATION ================= */
+        /* ================= QUALIFICATION FIXED ================= */
         .secondSection {
             max-width: 90vw;
             margin: auto;
-            padding-bottom: 50px;
-        }
-
-        .secondSection h1 {
-            font-size: 1.8rem;
-            margin-top: 10px;
+            padding-bottom: 60px;
+            text-align: center;
         }
 
         .text-gray {
             color: gray;
         }
 
-        .secondSection .box {
-            background: white;
-            width: 100%;
-            height: 2px;
-            margin: 50px 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .secondSection h1 {
+            font-size: 1.8rem;
+            margin: 10px 0 30px;
         }
 
-        .secondSection .vertical {
-            background-color: white;
-            height: 100px;
-            width: 1px;
-            margin: 20px;
-            position: relative;
+        .box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .vertical {
+            background: #1e2167;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
         }
 
         .image-top {
-            width: 23px;
-            position: absolute;
-            top: -32px;
-            left: -11px;
+            width: 30px;
+            margin-bottom: 10px;
         }
 
         .vertical-title {
-            position: absolute;
-            top: 80px;
-            width: 180px;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
         }
 
         .vertical-desc {
-            position: absolute;
-            top: 105px;
-            color: gray;
-            width: 180px;
-            font-size: 12px;
+            font-size: 13px;
+            color: #cfcfcf;
+            line-height: 1.5;
         }
 
         /* ================= FOOTER ================= */
@@ -209,25 +195,16 @@
             margin-top: 10px;
         }
 
-        .footer-social a img {
+        .footer-social img {
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: 0.3s;
         }
 
-        .footer-social a img:hover {
+        .footer-social img:hover {
             transform: scale(1.2);
             box-shadow: 0 0 10px rgba(170, 107, 228, 0.6);
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #9c97f1;
         }
 
         .footer-rights {
@@ -237,9 +214,8 @@
             font-size: 14px;
         }
 
-        /* ================= MOBILE RESPONSIVE ================= */
+        /* ================= MOBILE ================= */
         @media (max-width: 768px) {
-
             .firstSection>div {
                 width: 90%;
             }
@@ -253,21 +229,8 @@
                 margin-top: 20px;
             }
 
-            .secondSection .box {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .secondSection .vertical {
-                height: auto;
-                margin: 30px 0;
-            }
-
-            .vertical-title,
-            .vertical-desc {
-                position: relative;
-                top: 0;
-                margin-left: 20px;
+            .box {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -276,7 +239,7 @@
                 font-size: 1.4rem;
             }
 
-            .leftSection .btn {
+            .btn {
                 font-size: 13px;
                 padding: 8px 14px;
             }
@@ -290,7 +253,7 @@
         <nav>
             <div class="left">
                 <img class="image-profile" src="Nikhil Profile.jpg" alt="">
-                <div class="nav-title">Nikhil's Portfolio</div>
+                <div>Nikhil's Portfolio</div>
             </div>
 
             <ul>
@@ -304,6 +267,7 @@
     </header>
 
     <main>
+        <!-- HERO -->
         <section class="firstSection">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Nikhil</span>
@@ -311,8 +275,7 @@
                 <span id="element"></span>
 
                 <div class="buttons">
-                    <a href="https://drive.google.com/file/d/18tDSlGEE_owN6bGWajJ68Mzg1lbEygyJ/view"
-                        class="btn">Download Resume</a>
+                    <a href="https://drive.google.com" class="btn">Download Resume</a>
                     <a href="https://github.com/inikhil25" class="btn">Visit Github</a>
                 </div>
             </div>
@@ -324,6 +287,7 @@
 
         <hr>
 
+        <!-- QUALIFICATION -->
         <section class="secondSection">
             <span class="text-gray">What I've Done so far</span>
             <h1>Qualification</h1>
@@ -341,11 +305,13 @@
                     <div class="vertical-title">BA (2019–2022)</div>
                     <div class="vertical-desc">Bachelor of Arts</div>
                 </div>
+
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">Intermediate (2018–2019)</div>
                     <div class="vertical-desc">U.P. Board</div>
                 </div>
+
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">Highschool (2019–2022)</div>
@@ -358,43 +324,24 @@
 
     <footer>
         <div class="footer">
-            <div>
-                <h3>Nikhil's Developer Portfolio</h3>
-            </div>
-
-            <div>
-                <h4>Connect with me</h4>
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/nikhil-pal-37a33a242" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.facebook.com/nikhil.pal.562114" target="_blank">
-                        <img src="facebook.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/hanjii_nikhil/" target="_blank">
-                        <img src="instagram.png" alt="Instagram">
-                    </a>
-                </div>
-            </div>
+            <h3>Nikhil's Developer Portfolio</h3>
         </div>
 
         <div class="footer-rights">
-            Copyright © nikhilsportfolio.com | All Rights Reserved
+            © nikhilsportfolio.com | All Rights Reserved
         </div>
     </footer>
 
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
     <script>
-        var typed = new Typed('#element', {
+        new Typed('#element', {
             strings: ['Software Developer', 'Full Stack Developer', 'QA Engineer'],
             typeSpeed: 50,
+            loop: true
         });
     </script>
 
 </body>
+
 </html>
-
-
-
-
