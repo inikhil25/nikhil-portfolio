@@ -1,237 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Nikhil</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(18, 18, 62);
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-
-    nav .image-profile {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        border: 2px solid #9c97f1;
-        object-fit: cover;
-    }
-
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav ul li {
-        list-style: none;
-        margin: 8px 15px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-    }
-
-    nav ul li a:hover {
-        color: rgb(153, 153, 226);
-    }
-
-    .left {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 1.3rem;
-    }
-
-    .about-section {
-        max-width: 90vw;
-        margin: 50px auto;
-        padding: 0 10px;
-    }
-
-    .about-section h1 {
-        font-size: 2.2rem;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .about-section p {
-        color: #d1d1d1;
-        line-height: 1.7;
-        font-size: 1rem;
-        margin-bottom: 18px;
-        text-align: justify;
-    }
-
-    .purple {
-        color: rgb(170, 107, 228);
-    }
-
-    .skills {
-        margin-top: 40px;
-    }
-
-    .skills h2 {
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .skills ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .skills ul li {
-        list-style: none;
-        background: #1e2167;
-        padding: 8px 14px;
-        border-radius: 6px;
-        margin: 6px;
-        font-size: 13px;
-    }
-
-    footer {
-        background-color: #0e0e1a;
-        margin-top: 60px;
-    }
-
-    .footer-rights {
-        text-align: center;
-        color: gray;
-        padding: 12px 10px;
-        font-size: 14px;
-    }
-
-    /* 📱 Mobile Responsive */
-    @media (max-width: 768px) {
-        nav {
-            flex-direction: column;
-            height: auto;
-        }
-
-        .left {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        nav ul li {
-            margin: 6px 10px;
-        }
-
-        .about-section h1 {
-            font-size: 1.8rem;
-        }
-
-        .about-section p {
-            font-size: 0.95rem;
-        }
-
-        .skills ul li {
-            font-size: 12px;
-            padding: 7px 12px;
-        }
-    }
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Nikhil Pal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <header>
-        <nav>
-            <div class="left">
-                <img class="image-profile" src="Nikhil Profile.jpg" alt="">
-                <div>Nikhil's Portfolio</div>
-            </div>
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Nikhil.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="page-hero">
+  <p class="page-hero-tag">Get to know me</p>
+  <h1 class="page-hero-title">About <span>Me</span></h1>
+  <p class="page-hero-sub">MCA Graduate · Developer · Data Analyst · AI Enthusiast</p>
+</div>
 
-    <main>
-        <section class="about-section">
-            <h1>About <span class="purple">Me</span></h1>
+<!-- ═══ ABOUT SECTION ═══ -->
+<section class="about-section">
 
-            <p>
-                Hello! I'm <span class="purple">Nikhil Pal</span>, a passionate and dedicated
-                Software Developer currently completed my Master of Computer Applications (MCA).
-                I enjoy building clean, responsive, and user-friendly web applications.
-            </p>
+  <!-- Left: profile image -->
+  <div class="about-img-wrap fade-up">
+    <div class="about-img-ring">
+      <img src="Nikhil Profile.jpg" alt="Nikhil Pal" />
+    </div>
 
-            <p>
-                I have a strong interest in Softesare Development, Web Development & Full Stack Development and love working with modern
-                technologies to solve real-world problems. I am a quick learner, self-motivated,
-                and always eager to improve my technical and problem-solving skills.
-            </p>
-
-            <p>
-                My goal is to start my career as a software developer in a growth-oriented company
-                where I can apply my knowledge, learn from experienced professionals, and contribute
-                to meaningful projects.
-            </p>
-
-            <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>Flask</li>
-                    <li>OOPs</li>
-                    <li>Spring Boot</li>
-                    <li>MySQL</li>
-                    <li>Git & GitHub</li>
-                    <li>Basic QA Testing</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-rights">
-            © 2026 nikhilsportfolio.com | All Rights Reserved
+    <!-- Quick info cards below image -->
+    <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.7rem;">
+      <div style="display:flex;align-items:center;gap:.8rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;">
+        <span style="font-size:1.3rem;">📍</span>
+        <div>
+          <div style="font-size:.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;">Location</div>
+          <div style="font-size:.88rem;font-weight:600;">Noida, Uttar Pradesh</div>
         </div>
-    </footer>
+      </div>
+      <div style="display:flex;align-items:center;gap:.8rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;">
+        <span style="font-size:1.3rem;">🎓</span>
+        <div>
+          <div style="font-size:.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;">Degree</div>
+          <div style="font-size:.88rem;font-weight:600;">MCA — CSJM University</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:.8rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;">
+        <span style="font-size:1.3rem;">💼</span>
+        <div>
+          <div style="font-size:.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;">Experience</div>
+          <div style="font-size:.88rem;font-weight:600;">6-Month Internship @ Skybrisk</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:.8rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;">
+        <span style="font-size:1.3rem;">✉️</span>
+        <div>
+          <div style="font-size:.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;">Email</div>
+          <div style="font-size:.88rem;font-weight:600;">nikhilpal933661@gmail.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Right: content -->
+  <div class="about-content fade-up">
+    <h2>Hello, I'm <span>Nikhil Pal</span></h2>
+
+    <p>
+      I'm a passionate and dedicated Software Developer who recently completed
+      my Master of Computer Applications (MCA). I enjoy building clean,
+      responsive, and user-friendly web applications that solve real problems.
+    </p>
+
+    <p>
+      I have a strong interest in <strong style="color:var(--primary);">Full Stack Development</strong>,
+      <strong style="color:var(--accent);">Data Analytics</strong>, and
+      <strong style="color:var(--accent2);">AI-powered workflows</strong>.
+      I actively work with tools like Claude, LLMs, MCPs, and CLI Agents —
+      making me an AI-first thinker at the entry level.
+    </p>
+
+    <p>
+      During my 6-month internship at <strong style="color:var(--primary);">The Skybrisk</strong>
+      as a Full Stack Java Developer (Remote), I developed and debugged web
+      applications, collaborated with senior engineers, and maintained
+      technical documentation. Real work — not just coursework.
+    </p>
+
+    <p>
+      My goal is to join a growth-oriented company where I can apply my
+      technical skills, learn from experienced professionals, and contribute
+      to meaningful products while continuing to grow in Data Analytics and AI.
+    </p>
+
+    <!-- Skills -->
+    <h3 style="font-size:1rem;font-weight:700;margin:1.5rem 0 .75rem;color:var(--text);">🛠 Technical Skills</h3>
+    <div class="skills-grid">
+      <span class="skill-chip" style="color:#E44D26;border-color:rgba(228,77,38,.3);background:rgba(228,77,38,.08);">🟠 HTML5</span>
+      <span class="skill-chip" style="color:#1572B6;border-color:rgba(21,114,182,.3);background:rgba(21,114,182,.08);">🔵 CSS3</span>
+      <span class="skill-chip" style="color:#F7DF1E;border-color:rgba(247,223,30,.3);background:rgba(247,223,30,.08);">🟡 JavaScript</span>
+      <span class="skill-chip" style="color:#F89820;border-color:rgba(248,152,32,.3);background:rgba(248,152,32,.08);">☕ Java</span>
+      <span class="skill-chip" style="color:#3776AB;border-color:rgba(55,118,171,.3);background:rgba(55,118,171,.08);">🐍 Python</span>
+      <span class="skill-chip" style="color:#3776AB;border-color:rgba(55,118,171,.3);background:rgba(55,118,171,.08);">🌐 Django</span>
+      <span class="skill-chip" style="color:#3776AB;border-color:rgba(55,118,171,.3);background:rgba(55,118,171,.08);">⚗️ Flask</span>
+      <span class="skill-chip" style="color:#6DB33F;border-color:rgba(109,179,63,.3);background:rgba(109,179,63,.08);">🌱 Spring Boot</span>
+      <span class="skill-chip" style="color:#00758F;border-color:rgba(0,117,143,.3);background:rgba(0,117,143,.08);">🐬 MySQL</span>
+      <span class="skill-chip" style="color:#009688;border-color:rgba(0,150,136,.3);background:rgba(0,150,136,.08);">🗄 SQL</span>
+      <span class="skill-chip" style="color:#F3BB0A;border-color:rgba(243,187,10,.3);background:rgba(243,187,10,.08);">📊 Power BI</span>
+      <span class="skill-chip" style="color:#F05032;border-color:rgba(240,80,50,.3);background:rgba(240,80,50,.08);">🔴 Git &amp; GitHub</span>
+      <span class="skill-chip" style="color:#a09cff;border-color:rgba(108,99,255,.3);background:rgba(108,99,255,.08);">🧠 Claude AI</span>
+      <span class="skill-chip" style="color:#a09cff;border-color:rgba(108,99,255,.3);background:rgba(108,99,255,.08);">🤖 LLMs</span>
+      <span class="skill-chip" style="color:#a09cff;border-color:rgba(108,99,255,.3);background:rgba(108,99,255,.08);">⚡ MCPs</span>
+      <span class="skill-chip">🧪 Basic QA Testing</span>
+      <span class="skill-chip">🔌 OOPs</span>
+      <span class="skill-chip">📐 JDBC</span>
+    </div>
+
+    <!-- CTA row -->
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+      <a href="https://drive.google.com/file/d/1JwDXvQPIr4j5cyhhXF6omIN7ovmZElsJ/view?usp=drive_link"
+         class="btn btn-primary" target="_blank" rel="noopener">⬇ Download Resume</a>
+      <a href="contact.html" class="btn btn-outline">✉ Hire Me</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══ DATA & AI HIGHLIGHT STRIP ═══ -->
+<section style="max-width:1000px;margin:0 auto 5rem;padding:0 2.5rem;">
+  <div style="background:linear-gradient(135deg,rgba(108,99,255,.15),rgba(255,107,107,.1));border:1px solid rgba(108,99,255,.3);border-radius:var(--radius-lg);padding:2rem;text-align:center;">
+    <h3 style="font-size:1.2rem;font-weight:800;margin-bottom:.5rem;">
+      🤖 AI-First Thinker at Entry Level
+    </h3>
+    <p style="color:var(--text-muted);font-size:.9rem;max-width:600px;margin:0 auto 1.25rem;">
+      I actively use Claude, LLMs, MCPs &amp; CLI Agents in real workflows —
+      a rare skill set that most freshers simply don't have yet.
+    </p>
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;">
+      <span class="tech-badge tech-claude">🧠 Claude</span>
+      <span class="tech-badge tech-ai">🤖 LLMs</span>
+      <span class="tech-badge tech-ai">⚡ MCPs</span>
+      <span class="tech-badge tech-ai">💻 CLI Agents</span>
+      <span class="tech-badge tech-powerbi">📊 Power BI</span>
+      <span class="tech-badge tech-python">🐍 Python Analytics</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Nikhil.</div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/nikhil-pal-37a33a242" target="_blank" rel="noopener">in</a>
+      <a href="https://github.com/inikhil25" target="_blank" rel="noopener">🐙</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">ig</a>
+    </div>
+    <p class="footer-copy">© 2026 nikhilsportfolio.com · All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
-
 </html>
-
-
-
