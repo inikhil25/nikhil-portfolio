@@ -1,249 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Nikhil</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-   <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgb(18, 18, 62);
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-
-    nav .image-profile {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        border: 2px solid #9c97f1;
-        object-fit: cover;
-    }
-
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 10px;
-    }
-
-    nav ul li {
-        list-style: none;
-        margin: 6px 12px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-    }
-
-    nav ul li a:hover {
-        color: rgb(153, 153, 226);
-    }
-
-    .left {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 1.3rem;
-    }
-
-    /* Services Section */
-    .services-section {
-        max-width: 90vw;
-        margin: 50px auto;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .services-section h1 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-    }
-
-    .services-section p {
-        color: #d1d1d1;
-        margin-bottom: 40px;
-        font-size: 0.95rem;
-    }
-
-    .purple {
-        color: rgb(170, 107, 228);
-    }
-
-    .services-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 20px;
-    }
-
-    .service-card {
-        background: #1e2167;
-        padding: 22px 18px;
-        border-radius: 12px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .service-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 0 15px rgba(170, 107, 228, 0.4);
-    }
-
-    .service-card h3 {
-        margin-bottom: 12px;
-        font-size: 1.15rem;
-    }
-
-    .service-card p {
-        font-size: 0.9rem;
-        color: #cfcfcf;
-        line-height: 1.6;
-    }
-
-    footer {
-        background-color: #0e0e1a;
-        margin-top: 60px;
-    }
-
-    .footer-rights {
-        text-align: center;
-        color: gray;
-        padding: 12px 10px;
-        font-size: 14px;
-    }
-
-    /* 📱 Mobile Responsive */
-    @media (max-width: 768px) {
-        nav {
-            flex-direction: column;
-        }
-
-        .left {
-            font-size: 1.2rem;
-        }
-
-        .services-section h1 {
-            font-size: 1.8rem;
-        }
-
-        .service-card {
-            padding: 16px;
-        }
-
-        .service-card h3 {
-            font-size: 1.05rem;
-        }
-    }
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Nikhil Pal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <header>
-        <nav>
-            <div class="left">
-                <img class="image-profile" src="Nikhil Profile.jpg" alt="">
-                <div>Nikhil's Portfolio</div>
-            </div>
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Nikhil.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <p class="page-hero-tag">What I offer</p>
+  <h1 class="page-hero-title">My <span>Services</span></h1>
+  <p class="page-hero-sub">Skills &amp; capabilities I bring to your project</p>
+</div>
 
-    <main>
-        <section class="services-section">
-            <h1>My <span class="purple">Services</span></h1>
-            <p>What I can do for you</p>
+<!-- ═══ SERVICES GRID ═══ -->
+<div class="services-grid">
 
-            <div class="services-container">
+  <!-- 1. Web Development -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(228,77,38,.12);">🌐</div>
+    <h3 class="service-title">Web Development</h3>
+    <p class="service-desc">
+      Creating responsive, modern websites with clean UI and best
+      coding practices. Pixel-perfect across all devices and browsers.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-html"><span>🟠</span> HTML5</span>
+      <span class="tech-badge tech-css"><span>🔵</span> CSS3</span>
+      <span class="tech-badge tech-js"><span>🟡</span> JavaScript</span>
+    </div>
+  </div>
 
-                <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>
-                        Creating responsive and modern websites using HTML, CSS,
-                        and JavaScript with clean UI and best coding practices.
-                    </p>
-                </div>
+  <!-- 2. Full Stack Development -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(248,152,32,.12);">⚙️</div>
+    <h3 class="service-title">Full Stack Development</h3>
+    <p class="service-desc">
+      Building complete web applications — secure backends,
+      RESTful APIs, and seamless front-end integration.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-java"><span>☕</span> Java</span>
+      <span class="tech-badge tech-spring"><span>🌱</span> Spring Boot</span>
+      <span class="tech-badge tech-mysql"><span>🐬</span> MySQL</span>
+      <span class="tech-badge tech-html"><span>🟠</span> HTML</span>
+      <span class="tech-badge tech-css"><span>🔵</span> CSS</span>
+    </div>
+  </div>
 
-                <div class="service-card">
-                    <h3>Full Stack Development</h3>
-                    <p>
-                        Developing complete web applications using Java,
-                        Spring Boot, MySQL, and frontend technologies.
-                    </p>
-                </div>
+  <!-- 3. Backend Development -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(109,179,63,.12);">🔧</div>
+    <h3 class="service-title">Backend Development</h3>
+    <p class="service-desc">
+      Building secure, scalable backend systems with role-based
+      authentication, CRUD operations, and database design.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-java"><span>☕</span> Java</span>
+      <span class="tech-badge tech-spring"><span>🌱</span> Spring Boot</span>
+      <span class="tech-badge tech-sql"><span>🗄</span> SQL</span>
+      <span class="tech-badge tech-mysql"><span>🐬</span> MySQL</span>
+    </div>
+  </div>
 
-                <div class="service-card">
-                    <h3>UI / UX Design</h3>
-                    <p>
-                        Designing user-friendly layouts with a focus on
-                        usability, accessibility, and visual consistency.
-                    </p>
-                </div>
+  <!-- 4. UI/UX Design -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(77,150,255,.12);">🎨</div>
+    <h3 class="service-title">UI / UX Design</h3>
+    <p class="service-desc">
+      Designing user-friendly layouts with focus on usability,
+      accessibility, and visual consistency across all platforms.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-html"><span>🟠</span> HTML5</span>
+      <span class="tech-badge tech-css"><span>🔵</span> CSS3</span>
+      <span class="tech-badge tech-js"><span>🟡</span> JavaScript</span>
+    </div>
+  </div>
 
-                <div class="service-card">
-                    <h3>Backend Development</h3>
-                    <p>
-                        Building secure, scalable backend systems and REST APIs
-                        using Java and Spring Boot.
-                    </p>
-                </div>
+  <!-- 5. QA & Testing -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(107,203,119,.12);">🧪</div>
+    <h3 class="service-title">QA &amp; Testing</h3>
+    <p class="service-desc">
+      Manual testing, bug tracking, and quality assurance to ensure
+      stable, production-ready applications before deployment.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-java"><span>☕</span> Java</span>
+      <span class="tech-badge tech-git"><span>🔴</span> Git</span>
+      <span class="tech-badge tech-sql"><span>🗄</span> SQL</span>
+    </div>
+  </div>
 
-                <div class="service-card">
-                    <h3>QA & Testing</h3>
-                    <p>
-                        Performing manual testing, bug tracking, and ensuring
-                        application quality before deployment.
-                    </p>
-                </div>
+  <!-- 6. Git & Version Control -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(240,80,50,.12);">🐙</div>
+    <h3 class="service-title">Git &amp; Version Control</h3>
+    <p class="service-desc">
+      Managing projects using Git and GitHub with proper branching,
+      version control workflows, and team collaboration.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-git"><span>🔴</span> Git</span>
+      <span class="tech-badge tech-git"><span>🐙</span> GitHub</span>
+    </div>
+  </div>
 
-                <div class="service-card">
-                    <h3>Git & Version Control</h3>
-                    <p>
-                        Managing projects using Git and GitHub with proper
-                        version control and collaboration workflow.
-                    </p>
-                </div>
+  <!-- 7. Python Development -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(55,118,171,.12);">🐍</div>
+    <h3 class="service-title">Python Development</h3>
+    <p class="service-desc">
+      Scripting, automation, and web backend development using Python.
+      Familiar with Django, Flask, and data manipulation libraries.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-python"><span>🐍</span> Python</span>
+      <span class="tech-badge tech-python"><span>🌐</span> Django</span>
+      <span class="tech-badge tech-python"><span>⚗️</span> Flask</span>
+    </div>
+  </div>
 
-            </div>
-        </section>
-    </main>
+  <!-- 8. API Integration -->
+  <div class="service-card fade-up">
+    <div class="service-icon-wrap" style="background:rgba(108,99,255,.12);">🔌</div>
+    <h3 class="service-title">API Integration</h3>
+    <p class="service-desc">
+      Integrating third-party REST APIs into web applications,
+      handling live data streams and dynamic UI updates.
+    </p>
+    <div class="service-tech-icons">
+      <span class="tech-badge tech-js"><span>🟡</span> JavaScript</span>
+      <span class="tech-badge tech-python"><span>🐍</span> Python</span>
+      <span class="tech-badge tech-java"><span>☕</span> Java</span>
+    </div>
+  </div>
 
-    <footer>
-        <div class="footer-rights">
-            © 2026 nikhilsportfolio.com | All Rights Reserved
-        </div>
-    </footer>
+</div>
 
+<!-- ═══════════════════════════════════════════
+     DATA ANALYST & AI SECTION  ← NEW
+═══════════════════════════════════════════ -->
+<section class="ai-section">
+  <div class="ai-banner fade-up">
+
+    <div>
+      <p class="page-hero-tag" style="text-align:left;margin-bottom:.4rem;">New Specialisation</p>
+      <h2 class="ai-banner-title">Data Analytics <span>&amp; AI</span></h2>
+      <p style="color:var(--text-muted);font-size:.9rem;line-height:1.75;margin-bottom:1.25rem;">
+        Beyond web development, I'm building strong expertise in Data Analytics
+        and AI tools. I work with SQL, Python, and Power BI to extract insights
+        from data — and I actively use modern AI tools like Claude, LLMs, and
+        MCPs to build smarter, faster workflows.
+      </p>
+      <div class="service-tech-icons">
+        <span class="tech-badge tech-sql"><span>🗄</span> SQL</span>
+        <span class="tech-badge tech-python"><span>🐍</span> Python</span>
+        <span class="tech-badge tech-powerbi"><span>📊</span> Power BI</span>
+        <span class="tech-badge tech-ai"><span>🤖</span> LLMs</span>
+        <span class="tech-badge tech-claude"><span>🧠</span> Claude</span>
+        <span class="tech-badge tech-ai"><span>⚡</span> MCPs</span>
+      </div>
+    </div>
+
+    <div>
+      <p style="font-size:.8rem;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:.85rem;">AI &amp; Data Tools I Use</p>
+      <div class="ai-tools-grid">
+        <div class="ai-tool-chip"><span class="chip-icon">🧠</span> Claude (Anthropic)</div>
+        <div class="ai-tool-chip"><span class="chip-icon">🤖</span> LLMs &amp; Prompting</div>
+        <div class="ai-tool-chip"><span class="chip-icon">⚡</span> MCPs</div>
+        <div class="ai-tool-chip"><span class="chip-icon">💻</span> CLI Agents</div>
+        <div class="ai-tool-chip"><span class="chip-icon">📊</span> Power BI Dashboards</div>
+        <div class="ai-tool-chip"><span class="chip-icon">🐍</span> Python Analytics</div>
+        <div class="ai-tool-chip"><span class="chip-icon">🗄</span> SQL &amp; Querying</div>
+        <div class="ai-tool-chip"><span class="chip-icon">📈</span> Excel Analytics</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Nikhil.</div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/nikhil-pal-37a33a242" target="_blank" rel="noopener">in</a>
+      <a href="https://github.com/inikhil25" target="_blank" rel="noopener">🐙</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">ig</a>
+    </div>
+    <p class="footer-copy">© 2026 nikhilsportfolio.com · All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
-
 </html>
-
